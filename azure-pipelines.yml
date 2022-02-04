@@ -19,13 +19,11 @@ steps:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
 
-parameters:
-  - name : array
-    values:
-        - abc
-        - def
 
 - script: |
         echo " Script Beginging"
-        echo "${{ parameters.array }}"
+        pwd
+        ls
+        echo "Script Done"
+        
   displayName: 'pytest'

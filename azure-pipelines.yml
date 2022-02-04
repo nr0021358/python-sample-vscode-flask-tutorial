@@ -5,9 +5,12 @@
 
 
 parameters:
-  exclude:''
-    - abc
-    - def
+  - name: exclude
+    default:
+    displayName: "Repos Excluded"
+    values:
+      - abc
+      - def
 
 
 trigger:
@@ -32,7 +35,7 @@ steps:
         pwd
         ls
         echo "Script Done"
-        echo array: ${{join(' ',parameters.array)}}
+        echo array: ${{join(' ',parameters.exclude)}}
         for ar in array:
         do
           echo $ar

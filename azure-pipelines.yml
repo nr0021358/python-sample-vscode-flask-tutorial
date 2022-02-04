@@ -19,7 +19,7 @@ steps:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
 parameters:
-  array:
+  - array:
       - abc
       - def
 

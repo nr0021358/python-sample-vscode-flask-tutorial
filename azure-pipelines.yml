@@ -5,9 +5,9 @@
 
 
 parameters:
-  - name: array
-    default:
-    values: ['abc','def']
+  array:
+      - abc
+      - def
 
 trigger:
 - master

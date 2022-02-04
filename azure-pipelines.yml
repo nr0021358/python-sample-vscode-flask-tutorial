@@ -32,6 +32,6 @@ steps:
         pwd
         ls
         echo "Script Done"
-        echo "${{ parameters.array }}"
+        echo "$({{ parameters.array }})"
         
   displayName: 'pytest'

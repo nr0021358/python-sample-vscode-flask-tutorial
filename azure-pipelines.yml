@@ -10,7 +10,10 @@ parameters:
         - abc
         - def
 
-
+variables:
+  mytype:
+       - abc
+       - def
 trigger:
 - master
 
@@ -33,7 +36,7 @@ steps:
         pwd
         ls
         echo "Script Done"
-        
+        echo "${{ variables.mytype }}"
         for ar in ${{ parameters.array }}
         do
           echo $ar

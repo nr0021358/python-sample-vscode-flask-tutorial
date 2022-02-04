@@ -11,9 +11,7 @@ parameters:
         - def
 
 variables:
-  mytype:
-       - abc
-       - def
+  mytype: ['abc', 'def']
 trigger:
 - master
 

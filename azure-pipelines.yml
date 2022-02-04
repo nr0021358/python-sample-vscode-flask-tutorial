@@ -5,7 +5,7 @@
 
 
 parameters:
-  - array: ["abc","def"]
+  array: ["abc","def"]
 
 
 trigger:

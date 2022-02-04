@@ -4,8 +4,8 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 
-- parameters:
-  array: ["abc","def"]
+parameters:
+  - array: ["abc","def"]
 
 
 trigger:

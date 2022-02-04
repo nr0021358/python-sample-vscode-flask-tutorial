@@ -34,7 +34,7 @@ steps:
         ls
         echo "Script Done"
         
-        for ar in {{ parameters.array }}
+        for ar in ${{ parameters.array }}
         do
           echo $ar
         done

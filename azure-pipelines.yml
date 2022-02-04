@@ -32,6 +32,10 @@ steps:
         pwd
         ls
         echo "Script Done"
-        echo "${({ parameters.array })}"
+        echo array: ${{join(' ',parameters.array)}}
+        for ar in array:
+        do
+          echo $ar
+        done
         
   displayName: 'pytest'

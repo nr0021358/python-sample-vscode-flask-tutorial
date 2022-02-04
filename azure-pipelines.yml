@@ -5,7 +5,9 @@
 
 
 parameters:
-  array: ["abc","def"]
+  exclude:''
+    - abc
+    - def
 
 
 trigger:

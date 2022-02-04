@@ -4,16 +4,18 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 parameters:
-  - name: array
+  - name: listOfValues
     type: object
-    values:
-        - abc
-        - def
+    default:
+      this_is:
+        a_complex: object
+        with:
+          - one
+          - two
 
-variables:
-  mytype: ['abc', 'def']
-trigger:
-- master
+steps:
+- script: |
+    echo "${{ convertToJson(parameters.listOfValues) }}"
 
 pool:
   vmImage: ubuntu-latest

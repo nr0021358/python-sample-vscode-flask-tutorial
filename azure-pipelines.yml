@@ -21,7 +21,7 @@ steps:
 
 parameters:
   - name : array
-  - values:
+    values:
         - abc
         - def
 

@@ -6,7 +6,10 @@
 
 parameters:
   - name: array
-    values: [1,2,3]
+    default:
+    values:
+        - abc
+        - def
 trigger:
 - master
 

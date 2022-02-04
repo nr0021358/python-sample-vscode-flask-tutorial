@@ -18,10 +18,10 @@ steps:
   inputs:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
-parameters:
-  - array:
-      - abc
-      - def
+  parameters:
+    - array:
+        - abc
+        - def
 
 - script: |
         echo " Script Beginging"
